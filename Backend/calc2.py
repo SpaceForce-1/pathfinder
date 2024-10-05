@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 os.environ['CG_PDF_VERBOSE'] = '1'
+
 class SolarSystemPlotter:
     def __init__(self):
         self.planets = {
@@ -12,7 +13,8 @@ class SolarSystemPlotter:
             'Mars': (1.52, 'red'),
             'Jupiter': (5.20, 'brown'),
             'Saturn': (9.58, 'gold'),
-            'Uranus': (19.22, 'cyan')
+            'Uranus': (19.22, 'cyan'),
+            'Neptune': (30.05, 'purple')  # Added Neptune
         }
         self.ts = load.timescale()
         # change the path to the location of the ephemeris file on your system
@@ -53,8 +55,8 @@ class SolarSystemPlotter:
         plt.legend()
         plt.grid(True, linestyle=':', alpha=0.5)
         plt.axis('equal')
-        plt.xlim(-20, 20)  # Set x-axis limits to keep some distance
-        plt.ylim(-20, 20)  # Set y-axis limits to keep some distance
+        plt.xlim(-35, 35)  # Set x-axis limits to keep some distance
+        plt.ylim(-35, 35)  # Set y-axis limits to keep some distance
         plt.show()
 
 # Example usage

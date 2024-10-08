@@ -301,9 +301,9 @@ class JPL():
     def planetsInit(self):
         self.G = 6.67408e-11 #m3 kg-1 s-2
         #First we need to open the correction parameters
-        self.correction_parameters = fileIO.dlmread('universe/Outer_Planets_Corrections.txt',' ')
+        self.correction_parameters = fileIO.dlmread('Backend/Outer_Planets_Corrections.txt',' ')
         #print(self.correction_parameters)
-        file = open('universe/Solar_System_Orbital_Elements.txt')
+        file = open('Backend/Solar_System_Orbital_Elements.txt')
         ctr = 0
         self.names = ['Sun','Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune','Pluto']
         self.colorwheel = ['tan','orange','blue','red','orange','yellow','green','blue','grey']

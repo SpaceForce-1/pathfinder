@@ -303,7 +303,7 @@ class JPL():
         #First we need to open the correction parameters
         self.correction_parameters = fileIO.dlmread('Backend/Outer_Planets_Corrections.txt',' ')
         #print(self.correction_parameters)
-        file = open('Backend/Solar_System_Orbital_Elements.txt')
+        file = open('Backend/orbit calc/Solar_System_Orbital_Elements.txt')
         ctr = 0
         self.names = ['Sun','Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune','Pluto']
         self.colorwheel = ['tan','orange','blue','red','orange','yellow','green','blue','grey']
